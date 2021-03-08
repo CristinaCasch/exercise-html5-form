@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h2>Payment form example</h2>
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <div class="alert alert-danger" role="alert">
+                    Some fields are missing
+                </div>
+                <form>
+                    <div class="form-row">
+                        <div class="col-6">
+                            <label for="validation01"> Card #</label>
+                            <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX" size="16">
+                        </div>
+
+                        <div class="col-3">
+                            <label for="validation02"> CVC #</label>
+                            <input type="text" class="form-control" placeholder="0000">
+                        </div>
+
+                        <div class="col-3">
+                            <label for="validation03"> Amount</label>
+                            <input type="text" class="form-control" placeholder="Amount">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="Usernameinput"> First name </label>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col-6">
+                            <label for="UserlastNameInput"> Last name </label>
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="validationCustom03">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                        </div>
+                        <div class="col-3">
+                            <label for="validationCustom04">State</label>
+                            <select class="custom-select" id="validationCustom04" required>
+                                <option selected disabled value="">Pick a state</option>
+                                <option value="1">California</option>
+                                <option value="2">Florida</option>
+                                <option value="3">Texas</option>>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label for="validationCustom05">Postal Code</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>
+                        </div>
+                    </div>
+
+                    <label for="validationDefault04">We accept</label>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <i class="fab fa-cc-mastercard"></i>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <i class="fab fa-cc-visa"></i>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <i class="fab fa-cc-diners-club"></i>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <i class="fab fa-cc-amex"></i>
+                            </div>
+                        </div>
+                         <div class="col-6">
+                            <label for="validationDefault04">Message</label>
+                            <textarea class="form-control" name="" cols="4" rows="4"></textarea>
+                            <small id="emailHelp" class="form-text text-muted">Add any notes here.</small>
+                        </div>                         
+                    </div>
+
+                    <div class="card-footer text-muted text-right">
+                <button class="btn btn-secondary" type="submit">Cancel</button>
+                <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+                </form>
+            </blockquote>
+        </div>
+    </div>
+
+</body>
+
+</html>
